@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Manuel Sebastián</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/logo.png" </head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" width="40" alt="Logo de la página web">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#certificados" onclick="seleccionar()">CERTIFICADOS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <video id="bg-video" autoplay muted loop>
+            <source src="vid/background/11537350-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div class="overlay"></div>
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/yo 2.jpeg" alt="YO">
+            </div>
+            <h1>MANUEL SEBASTIÁN IGLESIAS ISLA</h1>
+            <h2>Técnico en Sistemas Microinformáticos y Redes</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/manuel-sebastián-iglesias-isla-174b022b0/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Migleisla97"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MÍ</h2>
+            <p><span>Hola, me llamo Manuel.</span> Soy un aficionado de la tecnología y la inteligencia artificial.
+                Esta afición me llevó a estudiar Sistemas Microinformáticos y Redes, donde adquirí una sólida formación
+                en el mantenimiento y gestión de equipos informáticos,
+                así como en la administración de redes y sistemas. Mi experiencia y conocimientos me han permitido
+                explorar diversas áreas dentro de la tecnología,
+                siempre con el objetivo de estar a la vanguardia de los avances y aplicar soluciones innovadoras.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-02-1997
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            manuel.formtrab@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Marín, Pontevedra, España
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Mis Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <img id="MANDO"
+                                src="img/icons/gaming-controller-gamepad-joystick-game-console-svgrepo-com (1).svg"></i>
+                            <span>GAMING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <img id="F1" src="img/icons/f1-icon1.png"></i>
+                            <span>FÓRMULA 1</span>
+                        </div>
+                        <div class="interes">
+                            <img id="STAR" src="img/icons/estrella.png"></i>
+                            <span>SCIFI</span>
+                        </div>
+                        <div class="interes">
+                            <img id="ANIME" src="img/icons/icons8-anime-64.png"></i>
+                            <span>ANIME</span>
+                        </div>
+                        <div class="interes">
+                            <img id="CARDS" src="img/icons/COLECCION.png"></i>
+                            <span>COLECCIONISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>EDICIÓN DE VIDEO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <span>MONTAJE</span>
+                        </div>
+                        <div class="interes">
+                            <img id="AI" src="img/icons/ai-svgrepo-com.svg"></i>
+                            <span>IA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="CV/CV_27_07_24.pdf" download="Manuel_Sebastián_CV.pdf">
+                <button class="btn-descargar-cv">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+
+            <!-- Desarrollo Web -->
+            <div class="categoria">
+                <h3>Desarrollo Web</h3>
+                <div class="galeria">
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/html.svg" alt="HTML">
+                            <div class="overlay">
+                                <h3>HTML</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/css.svg" alt="CSS">
+                            <div class="overlay">
+                                <h3>CSS</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/sql-database-generic-svgrepo-com.svg" alt="SQL">
+                            <div class="overlay">
+                                <h3>SQL</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas de Desarrollo -->
+            <div class="categoria">
+                <h3>Herramientas de Desarrollo</h3>
+                <div class="galeria">
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/vsc.svg" alt="Visual Studio Code">
+                            <div class="overlay">
+                                <h3>Visual Studio Code</h3>
+                                <span>(Intermedio)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/docker.svg" alt="Docker">
+                            <div class="overlay">
+                                <h3>Docker</h3>
+                                <span>(Intermedio)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/git-icon-svgrepo-com.svg" alt="Git">
+                            <div class="overlay">
+                                <h3>Git</h3>
+                                <span>(Cursando)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/github-icon-svgrepo-com.svg" alt="GitHub">
+                            <div class="overlay">
+                                <h3>GitHub</h3>
+                                <span>(Cursando)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Administración de Sistemas -->
+            <div class="categoria">
+                <h3>Administración de Sistemas</h3>
+                <div class="galeria">
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/ubuntu-svgrepo-com.svg" alt="Ubuntu">
+                            <div class="overlay">
+                                <h3>Ubuntu</h3>
+                                <span>(Intermedio)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/windows10.svg" alt="Windows">
+                            <div class="overlay">
+                                <h3>Windows</h3>
+                                <span>(Intermedio)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/apache-svgrepo-com.svg" alt="APACHE WEB SERVER">
+                            <div class="overlay">
+                                <h3>Apache Web Server</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/ssh.png" alt="SSH">
+                            <div class="overlay">
+                                <h3>SSH</h3>
+                                <span>(Intermedio)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/OpenLDAP.png" alt="LDAP">
+                            <div class="overlay">
+                                <h3>LDAP</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes -->
+            <div class="categoria">
+                <h3>Redes</h3>
+                <div class="galeria">
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/local-network-conection-svgrepo-com.svg" alt="REDES LOCALES">
+                            <div class="overlay">
+                                <h3>Redes locales</h3>
+                                <span>(Intermedio)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diseño Gráfico y Multimedia -->
+            <div class="categoria">
+                <h3>Diseño Gráfico y Multimedia</h3>
+                <div class="galeria">
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/photoshop.svg" alt="Photoshop">
+                            <div class="overlay">
+                                <h3>Photoshop</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="icon-card">
+                            <img src="img/skills/sony-vegas.svg" alt="Sony Vegas">
+                            <div class="overlay">
+                                <h3>Sony Vegas</h3>
+                                <span>(Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educación Secundaria Obligatoria</h4>
+                        <span class="casa">I.E.S. Chan do Monte</span>
+                        <span class="fecha">Marín, Pontevedra | 2009 - 2015</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes</h4>
+                        <span class="casa">I.E.S. Chan do Monte</span>
+                        <span class="fecha">Marín, Pontevedra | 2022 - Presente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos Online y Certificaciones</h4>
+                        <span class="casa">OpenWebinars</span>
+                        <span class="fecha">2024 - Presente</span>
+                        <ul>
+                            <li><b>Curso de SQL desde Cero (7 horas):</b> Adquirí conocimientos básicos y avanzados de
+                                SQL, incluyendo la creación y manipulación de bases de datos.</li>
+                            <li><b>Fundamentos de la Inteligencia Artificial (7 horas):</b> Aprendí los principios
+                                fundamentales de la inteligencia artificial, incluyendo el aprendizaje automático y la
+                                implementación de modelos AI.</li>
+                            <li><b>Curso para no programadores: Uso básico de asistentes y GPTs en OpenAI (9 horas):</b>
+                                Desarrollé habilidades para utilizar asistentes AI y GPTs para tareas cotidianas y
+                                proyectos personales.</li>
+                            <li><b>Dominando ChatGPT con la API de OpenAI (5 horas):</b> Aprendí a integrar ChatGPT en
+                                aplicaciones mediante el uso de la API de OpenAI.</li>
+                            <li><b>IA en Acción: Inmersión en Deep Learning con Python (4 horas):</b> Adquirí
+                                conocimientos en el desarrollo de modelos de reconocimiento de entidades nombradas,
+                                segmentación semántica y creación de chatbots utilizando OpenAI. Implementé proyectos
+                                prácticos y personalizados a través de programación en pareja, desarrollando habilidades
+                                en el uso de herramientas avanzadas de IA.</li>
+                        </ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Autónomo</h4>
+                        <span class="casa">Bar As Dunas</span>
+                        <span class="fecha">Marín, Pontevedra | 2017 - 2021</span>
+                        <ul>
+                            <li>Administré todas las operaciones diarias del bar, incluyendo la supervisión del
+                                personal, la gestión de inventarios y la interacción con los proveedores.</li>
+                            <li>Proporcioné un excelente servicio al cliente, resolviendo quejas y asegurando una
+                                experiencia positiva para todos los clientes.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Camarero</h4>
+                        <span class="casa">Caribe Beach Mogor</span>
+                        <span class="fecha">Marín, Pontevedra | 08/2023</span>
+                        <ul>
+                            <li>Atendí a los clientes de manera eficiente y cortés, tomando pedidos y sirviendo bebidas
+                                y alimentos.</li>
+                            <li>Mantuve la limpieza y el orden en el área de trabajo, cumpliendo con las normativas de
+                                higiene y seguridad.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+
+                <!-- Administración de Sistemas y Redes -->
+                <div class="proyecto">
+                    <img src="img/portfolio/DNS (1).png" alt="DNS">
+                    <div class="overlay">
+                        <h3>Servidor DNS</h3>
+                        <p>Configuración de un servidor DNS para gestionar la resolución de nombres en una red local
+                            utilizando BIND.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio/DHCP (1).png" alt="DHCP">
+                    <div class="overlay">
+                        <h3>Servidor DHCP</h3>
+                        <p>Implementación de un servidor DHCP para asignar direcciones IP dinámicamente en una red local
+                            utilizando ISC DHCP Server.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio/SER_WEB.png" alt="WEB">
+                    <div class="overlay">
+                        <h3>Servidor WEB</h3>
+                        <p>Despliegue de un servidor web con Apache para alojar un sitio web estático en un entorno
+                            Linux.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio/DOCKER.png" alt="DOCKER">
+                    <div class="overlay">
+                        <h3>Docker</h3>
+                        <p>Uso de Docker para gestionar contenedores que facilitan el desarrollo y despliegue de
+                            aplicaciones.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio/BOTPRESS.png" alt="BOTPRESS">
+                    <div class="overlay">
+                        <h3>Chatbot</h3>
+                        <p>Despliegue de un chatbot utilizando Botpress para mejorar la interacción con los usuarios en
+                            un sitio web.</p>
+                    </div>
+                </div>
+
+                <!-- Desarrollo Web -->
+                <div class="proyecto">
+                    <img src="img/portfolio/WEB.png" alt="PAGWEB">
+                    <div class="overlay">
+                        <h3>PÁGINA WEB</h3>
+                        <p>Página web elaborada con Bootstrap.</p>
+                    </div>
+                </div>
+
+                <!-- Mantenimiento y Otros Proyectos -->
+                <div class="proyecto">
+                    <img src="img/portfolio/PC_VIEJO.jpg" alt="Mantenimiento de equipos">
+                    <div class="overlay">
+                        <h3>Mantenimiento de equipos</h3>
+                        <p>Realización de tareas de mantenimiento preventivo y correctivo en equipos.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio/RECREATIVA.png" alt="RECRE">
+                    <div class="overlay">
+                        <h3>Recreativa</h3>
+                        <p>Configuración de una máquina recreativa utilizando software libre y hardware compatible.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="text-center">Manuel Sebastián Iglesias Isla
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
